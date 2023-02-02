@@ -1,0 +1,3 @@
+0.2818	    ## Diffuse Reflectivity
+0.5046	    ## Transmittance
+0.2415	    ## Absorbance

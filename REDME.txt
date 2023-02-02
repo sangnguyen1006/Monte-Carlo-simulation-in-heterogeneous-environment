@@ -1,0 +1,42 @@
+%***********MONTE**CARLO**************/
+% 3/19/2022                                                                               
+%                                                                                        
+% Usage   maketissue.m                                                                     
+%         run maketissue.m to create:                                                       
+%                 1. myname_H.mci    = header input file for mcxyz.                          
+%                 2. myname_T.bin    = tissue structure file.                                
+%                                                                                
+% Usage   run.m
+%         myname is the user's choice.                                        
+%         The program reads two files prepared by user:
+%                 1. myname_H.mci    
+%                 2. myname_T.bin    
+%         The program executes the function mcxyz(Nphotons_worker) to simulate.
+%         The output will be written to 2 files:
+%                 1. myname_OP.m     = optical properties  (mua, mus, g for each tissue type)
+%                 2. myname_F.bin    = fluence rate output F[i] [W/cm^2 per W delivered]
+%                 3. mynameRd_yx.bin = diffuse reflection [W/cm^2 per W delivered]
+%                 4. mynameTt_yx.bin = transmission [W/cm^2 per W delivered]
+% 
+% Usage   lookmcxyz.m
+%         The MATLAB program lookmcxyz.m can read the output files and display
+%                 1. Fluence rate F [W/cm^2 per W delivered]
+%                 2. Deposition rate A [W/cm^3 per W delivered].
+%                 3. diffuse reflection Rd [W/cm^2 per W delivered]
+%                 4. transmission Tt [W/cm^3 per W delivered].
+%
+% Results AppleTissue_1
+%                 Simulation results of apple, Gaussian laser beam.
+%         AppleTissue_2
+%                 Simulation results of apple, infinitely narrow beam.
+%   
+% ************************************************************************/
+%
+% Log:
+% Written by Ting based on Steve's mcsub.c., 2010.
+%     Use Ting's FindVoxelFace().
+% Use Steve's FindVoxelFace(), Dec. 30, 2010.
+% Reorganized by Steve. May 8, 2012:
+%     Reads input files, outputs binary files.
+%
+% ************************************************************************/
