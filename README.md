@@ -10,7 +10,7 @@ considered as the gold standard for estimating the results of other computationa
 
 This study builds a 3D Monte Carlo simulation program of light transport in biological
 tissues using the Matlab computational tool. The program uses the algorithm of the
-programs MCML and mcxyz.c. Building simulation algorithms on Matlab simplifies
+programs MCML and mcxyz. Building simulation algorithms on Matlab simplifies
 operations for users, adds flexible graphical tools, and provides basic models for training
 and research purposes.
 
